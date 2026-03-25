@@ -1,10 +1,10 @@
 export default function Footer() {
   return (
-    <footer id="contact" className="py-20 md:py-24 px-6 md:px-16 bg-[#050505] text-white border-t border-neutral-900 z-20 relative">
+    <footer id="contact" className="py-20 md:py-24 px-6 md:px-16 bg-background text-foreground border-t dark:border-neutral-900 border-neutral-200 z-20 relative">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
         <div>
           <h2 className="text-5xl md:text-8xl font-bold tracking-tighter mb-6 md:mb-8">LET'S<br /><span className="text-neutral-600">CONNECT.</span></h2>
-          <a href="mailto:hello@example.com" className="text-lg md:text-2xl hover:text-neutral-400 border-b border-white/20 hover:border-neutral-400 transition-colors pb-1">
+          <a href="mailto:hello@example.com" className="text-lg md:text-2xl hover:text-neutral-400 border-b dark:border-white/20 border-black/20 hover:border-neutral-400 dark:hover:border-neutral-400 transition-colors pb-1">
             limwg021018@gmail.com
           </a>
         </div>

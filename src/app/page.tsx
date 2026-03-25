@@ -6,7 +6,7 @@ import Footer from '@/components/sections/Footer';
 
 export default function Home() {
   return (
-    <main className="w-full min-h-screen bg-black overflow-x-hidden">
+    <main className="w-full min-h-screen bg-background overflow-x-hidden">
       <Navigation />
       <Hero />
       <SelectedWorks />
