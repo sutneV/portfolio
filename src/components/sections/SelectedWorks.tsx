@@ -5,18 +5,18 @@ import { useRef } from 'react';
 
 const works = [
   {
-    title: 'Ethereal OS',
-    category: 'SYSTEM ARCHITECTURE',
+    title: 'AI-Powered Pet Adoption Platform',
+    category: 'FINAL YEAR PROJECT',
     year: '2025'
   },
   {
-    title: 'Nexus Platform',
-    category: 'WebGL EXPERIMENT',
-    year: '2024'
+    title: 'Product Portfolio',
+    category: 'INTERNSHIP PROJECT',
+    year: '2025'
   },
   {
-    title: 'Vanguard',
-    category: 'E-COMMERCE',
+    title: 'Ethereal OS',
+    category: 'HACKATHON WINNER',
     year: '2024'
   }
 ];
@@ -40,7 +40,7 @@ export default function SelectedWorks() {
 
         <div className="flex flex-col gap-8 md:gap-12">
           {works.map((work, idx) => (
-            <motion.div 
+            <motion.div
               key={idx}
               style={{ y: idx % 2 === 0 ? y : useTransform(scrollYProgress, [0, 1], [50, -50]) }}
               className="group relative flex flex-col md:flex-row justify-between md:items-center py-8 md:py-12 border-b border-neutral-900 md:border-neutral-800 hover:border-white transition-colors cursor-pointer"
@@ -49,7 +49,7 @@ export default function SelectedWorks() {
                 <span className="text-[10px] md:text-xs text-neutral-500 font-mono uppercase tracking-widest">{work.category}</span>
                 <h3 className="text-4xl md:text-7xl font-bold tracking-tighter md:mix-blend-difference z-20 pr-4">{work.title}</h3>
               </div>
-              
+
               <div className="font-mono text-neutral-500 text-xs md:text-sm">{work.year}</div>
 
               {/* Hover Image Overlay effect (abstract representation) */}
