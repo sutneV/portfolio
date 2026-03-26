@@ -43,19 +43,16 @@ export default function Hero() {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="flex flex-col gap-3 md:gap-4 text-foreground"
+          className="flex flex-col gap-6 md:gap-8 text-foreground"
         >
-          <motion.p variants={itemVariants} className="text-xs md:text-base font-medium uppercase tracking-widest text-neutral-500 dark:text-neutral-400">
-            Computer Science Student
-          </motion.p>
-          <motion.h1 variants={itemVariants} className="text-[14vw] leading-[0.85] md:text-[8vw] font-bold tracking-tighter">
-            LIM
-            <br />
-            <span className="text-neutral-600 dark:text-neutral-500">WEI GIAP.</span>
-            <br />
+          <motion.h1 variants={itemVariants} className="text-3xl md:text-4xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100 font-sans">
+            Hi, I'm Wei Giap - 林伟业 /línwěiyè/
           </motion.h1>
-          <motion.p variants={itemVariants} className="text-base md:text-xl text-neutral-600 dark:text-neutral-300 mt-4 md:mt-6 max-w-xl text-balance">
-            Passionate about building scalable applications and solving complex problems through innovative software solutions.
+          <motion.p variants={itemVariants} className="text-lg md:text-xl text-neutral-700 dark:text-neutral-300 max-w-2xl leading-relaxed text-balance font-sans">
+            A computer science student, passionate about ui/ux.
+          </motion.p>
+          <motion.p variants={itemVariants} className="text-lg md:text-xl text-neutral-700 dark:text-neutral-300 max-w-3xl leading-relaxed text-balance font-sans">
+            Currently interning at <span className="font-bold text-neutral-900 dark:text-neutral-100">Keysight Technologies</span> as a product engineer intern.
           </motion.p>
         </motion.div>
       </div>
