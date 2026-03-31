@@ -7,13 +7,13 @@ export default function Philosophy() {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ['start center', 'end center']
+    offset: ['start end', 'end start']
   });
 
   // Calculate an opacity mask that reveals the text as you scroll
   const maskImage = useTransform(
     scrollYProgress,
-    [0, 0.8],
+    [0.1, 0.48],
     ['linear-gradient(to right, white 0%, transparent 0%)', 'linear-gradient(to right, white 100%, transparent 100%)']
   );
 
@@ -23,7 +23,7 @@ export default function Philosophy() {
         <h2 className="text-[10px] md:text-sm font-mono uppercase tracking-widest text-neutral-500 mb-8 md:mb-12">
           — Philosophy
         </h2>
-        
+
         <div className="relative">
           {/* Base inactive text layer */}
           <p className="text-3xl md:text-5xl lg:text-7xl font-bold tracking-tighter leading-[1.1] md:leading-tight text-neutral-300 dark:text-neutral-800">
@@ -31,7 +31,7 @@ export default function Philosophy() {
           </p>
 
           {/* Active text layer that gets revealed */}
-          <motion.p 
+          <motion.p
             style={{ maskImage, WebkitMaskImage: maskImage }}
             className="absolute top-0 left-0 w-full h-full text-3xl md:text-5xl lg:text-7xl font-bold tracking-tighter leading-[1.1] md:leading-tight text-foreground"
           >

@@ -33,7 +33,7 @@ export default function Hero() {
   return (
     <section className="relative w-full min-h-[100dvh] flex flex-col justify-end md:justify-center overflow-hidden bg-background pb-24 md:pb-0">
       {/* 3D Lanyard Background/Centerpiece (rendered over text with mix-blend-difference to avoid CSS bounding box clipping) */}
-      <div className="absolute inset-0 z-30 pointer-events-none translate-y-[-10%] md:translate-y-0 md:translate-x-1/3 lg:translate-x-1/3 opacity-50 md:opacity-100 dark:mix-blend-difference">
+      <div className="absolute inset-0 z-30 pointer-events-none translate-y-[-15%] md:translate-y-0 md:translate-x-1/3 lg:translate-x-1/3 opacity-50 md:opacity-100 dark:mix-blend-difference">
         {mounted && <Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} theme={resolvedTheme} />}
       </div>
 
@@ -49,7 +49,7 @@ export default function Hero() {
             Hi, I'm Wei Giap - 林伟业 /línwěiyè/
           </motion.h1>
           <motion.p variants={itemVariants} className="text-lg md:text-xl text-neutral-700 dark:text-neutral-300 max-w-2xl leading-relaxed text-balance font-sans">
-            A computer science student, passionate about ui/ux.
+            A computer science student, passionate about UI/UX.
           </motion.p>
           <motion.p variants={itemVariants} className="text-lg md:text-xl text-neutral-700 dark:text-neutral-300 max-w-3xl leading-relaxed text-balance font-sans">
             Currently interning at <span className="font-bold text-neutral-900 dark:text-neutral-100">Keysight Technologies</span> as a product engineer intern.

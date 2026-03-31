@@ -17,16 +17,16 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-8 pt-4 text-center md:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-8 pt-4 text-left md:text-left">
           {/* Left: Email */}
-          <div className="text-left">
+          <div className="md:text-left">
             <a href="mailto:hello@example.com" className="text-sm md:text-base hover:text-neutral-400 transition-colors">
               limwg021018@gmail.com
             </a>
           </div>
 
           {/* Center: Greeting */}
-          <div className="text-center">
+          <div className="md:text-center">
             <p className="text-[10px] md:text-xs text-neutral-600 font-mono tracking-widest uppercase">
               © {new Date().getFullYear()} — Engineered with Precision.
             </p>
