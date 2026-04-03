@@ -9,10 +9,10 @@ export default function Footer() {
 
           <div className="flex flex-col gap-6 md:items-end">
             <div className="flex flex-col gap-4 text-xs md:text-base font-medium tracking-wide">
-              <a href="#" className="hover:opacity-70 transition-opacity block py-1 border-b border-white/5 md:border-none">TWITTER // X</a>
-              <a href="#" className="hover:opacity-70 transition-opacity block py-1 border-b border-white/5 md:border-none">GITHUB</a>
-              <a href="#" className="hover:opacity-70 transition-opacity block py-1 border-b border-white/5 md:border-none">LINKEDIN</a>
-              <a href="#" className="hover:opacity-70 transition-opacity block py-1">CODEPEN</a>
+              <a href="#" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity block py-1 border-b border-white/5 md:border-none">TWITTER // X</a>
+              <a href="https://github.com/sutneV" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity block py-1 border-b border-white/5 md:border-none">GITHUB</a>
+              <a href="#" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity block py-1 border-b border-white/5 md:border-none">LINKEDIN</a>
+              <a href="#" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity block py-1">CODEPEN</a>
             </div>
           </div>
         </div>
@@ -20,7 +20,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-8 pt-4 text-left md:text-left">
           {/* Left: Email */}
           <div className="md:text-left">
-            <a href="mailto:hello@example.com" className="text-sm md:text-base hover:text-neutral-400 transition-colors">
+            <a href="mailto:limwg021018@gmail.com" className="text-sm md:text-base hover:text-neutral-400 transition-colors">
               limwg021018@gmail.com
             </a>
           </div>
