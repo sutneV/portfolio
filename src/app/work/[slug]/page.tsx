@@ -1,8 +1,8 @@
 import { notFound } from 'next/navigation';
-import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft, ArrowUpRight, ExternalLink } from 'lucide-react';
 import { projects } from '@/data/projectsData';
+import ProjectCarousel from '@/components/ProjectCarousel';
 import type { Metadata } from 'next';
 
 // Generate static params for all project slugs
@@ -13,12 +13,13 @@ export function generateStaticParams() {
 }
 
 // Dynamic metadata
-export function generateMetadata({
+export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
-}): Metadata {
-  const project = projects.find((p) => p.slug === params.slug);
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const project = projects.find((p) => p.slug === slug);
   if (!project) return { title: 'Project Not Found' };
 
   return {
@@ -81,19 +82,11 @@ export default async function ProjectPage({
             {project.description}
           </p>
 
-          {/* Hero Image */}
-          <div className="relative w-full aspect-[16/9] rounded-xl md:rounded-2xl overflow-hidden ring-1 dark:ring-white/10 ring-black/10">
-            <Image
-              src={project.thumbnail}
-              alt={project.title}
-              fill
-              className="object-cover"
-              priority
-              sizes="(max-width: 768px) 100vw, 1280px"
-            />
-            {/* Subtle gradient overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
-          </div>
+          {/* Hero Image / Carousel */}
+          <ProjectCarousel 
+            images={project.images && project.images.length > 0 ? project.images : [project.thumbnail]} 
+            title={project.title} 
+          />
         </div>
       </section>
 

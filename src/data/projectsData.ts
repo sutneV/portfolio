@@ -8,6 +8,7 @@ export interface Project {
   techStack: string[];
   role: string;
   thumbnail: string;
+  images?: string[];
   liveUrl?: string;
   githubUrl?: string;
 }
@@ -19,11 +20,20 @@ export const projects: Project[] = [
     category: 'FINAL YEAR PROJECT',
     year: '2025',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.',
-    longDescription: ` `,
+      'Developed a full-stack web application connecting pet owners with adoptable animals across Penang, enabling real-time listings, search.',
+    longDescription: `This project introduces a Penangite Pet Enthusiast and Adoption Platform, a comprehensive web application designed to streamline the adoption process while supporting first-time adopters with AI-powered educational assistance.
+
+    The system integrates Retrieval-Augmented Generation (RAG) to deliver accurate, contextually relevant, and real-time responses to user queries on pet care, vaccination, and behavioural management. Developed using Next.js, Tailwind CSS, and Supabase for backend management, the platform also features community interaction tools such as discussion forums, event organization modules, and messaging systems to foster collaboration  `,
     techStack: ['Next.js', 'Supabase', 'PostgreSQL', 'Tailwind CSS', 'Framer Motion', 'shadcn/ui', 'TypeScript', 'Drizzle ORM', 'REST API', 'Open AI'],
     role: 'Full-Stack Developer',
-    thumbnail: '/assets/projects/general-img-landscape.png',
+    thumbnail: '/assets/projects/FYP-1.png',
+    images: [
+      '/assets/projects/FYP-1.png',
+      '/assets/projects/FYP-2.png',
+      '/assets/projects/FYP-3.png',
+      '/assets/projects/FYP-4.png',
+      '/assets/projects/FYP-5.png'
+    ],
     liveUrl: '#',
     githubUrl: 'https://github.com/sutneV/6001CEM-FYP',
   },
@@ -33,7 +43,7 @@ export const projects: Project[] = [
     category: 'INTERNSHIP PROJECT',
     year: '2025',
     description:
-      'A comprehensive product showcase platform built during my internship at Keysight Technologies, streamlining how engineers discover test solutions.',
+      'A comprehensive product showcase platform built during my internship at Keysight Technologies',
     longDescription: `During my internship at Keysight Technologies, I designed and developed an internal product portfolio platform that consolidates the company's extensive range of test and measurement solutions into a searchable, filterable interface.
 
 The platform replaced a fragmented system of spreadsheets and documents, providing engineers with instant access to product specifications, comparison tools, and integration guides. Built with a focus on performance and usability, it features advanced filtering, real-time search, and responsive data visualizations.
@@ -41,25 +51,16 @@ The platform replaced a fragmented system of spreadsheets and documents, providi
 Working within the product engineering team gave me deep exposure to enterprise UX challenges, cross-functional collaboration, and the importance of designing for highly technical users.`,
     techStack: ['Power Apps', 'SharePoint', 'Power Automate', 'Figma'],
     role: 'Product Engineer Intern',
-    thumbnail: '/assets/projects/general-img-landscape.png',
-    liveUrl: '#',
-    githubUrl: '#',
-  },
-  {
-    slug: 'ethereal-os',
-    title: 'Ethereal OS',
-    category: 'HACKATHON WINNER',
-    year: '2024',
-    description:
-      'A nostalgic virtual desktop environment reimagined with modern web technologies — winner of the best UI/UX award.',
-    longDescription: `Ethereal OS is a browser-based virtual desktop environment that blends retro computing aesthetics with cutting-edge web technologies. Built during a 48-hour hackathon, it features draggable windows, a functional taskbar, custom themes, and interactive mini-applications — all rendered entirely in the browser.
-
-The project showcases advanced CSS techniques including glassmorphism, custom animations, and pixel-perfect retro UI recreation. Under the hood, it uses React for state management, Framer Motion for fluid interactions, and a custom window manager that handles z-indexing, resizing, and snapping.
-
-Ethereal OS won the Best UI/UX award at the hackathon, praised for its attention to detail, smooth interactions, and the creative fusion of nostalgic and modern design languages.`,
-    techStack: ['React', 'Framer Motion', 'TypeScript', 'Tailwind CSS', 'Zustand'],
-    role: 'UI/UX Developer',
-    thumbnail: '/assets/projects/general-img-landscape.png',
+    thumbnail: '/assets/projects/PP-1.png',
+    images: [
+      '/assets/projects/PP-1.png',
+      '/assets/projects/PP-2.png',
+      '/assets/projects/PP-3.png',
+      '/assets/projects/PP-4.png',
+      '/assets/projects/PP-5.png',
+      '/assets/projects/PP-7.png',
+      '/assets/projects/PP-8.png'
+    ],
     liveUrl: '#',
     githubUrl: '#',
   },

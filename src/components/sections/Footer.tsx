@@ -9,10 +9,8 @@ export default function Footer() {
 
           <div className="flex flex-col gap-6 md:items-end">
             <div className="flex flex-col gap-4 text-xs md:text-base font-medium tracking-wide">
-              <a href="#" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity block py-1 border-b border-white/5 md:border-none">TWITTER // X</a>
               <a href="https://github.com/sutneV" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity block py-1 border-b border-white/5 md:border-none">GITHUB</a>
               <a href="#" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity block py-1 border-b border-white/5 md:border-none">LINKEDIN</a>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity block py-1">CODEPEN</a>
             </div>
           </div>
         </div>

@@ -86,7 +86,7 @@ export default function SelectedWorks() {
                     {project.description}
                   </p>
                   <div className="flex flex-wrap gap-2 md:justify-end shrink-0">
-                    {project.techStack.map((tech) => (
+                    {project.techStack.slice(0, 4).map((tech) => (
                       <span
                         key={tech}
                         className="tech-tag"
@@ -94,6 +94,11 @@ export default function SelectedWorks() {
                         {tech}
                       </span>
                     ))}
+                    {project.techStack.length > 4 && (
+                      <span className="tech-tag">
+                        +{project.techStack.length - 4}
+                      </span>
+                    )}
                   </div>
                 </div>
 

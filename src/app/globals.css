@@ -45,58 +45,56 @@
   }
 }
 
-@layer utilities {
-  .glass-panel {
-    background: rgba(255, 255, 255, 0.03);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-  }
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
 
-  .text-balance {
-    text-wrap: balance;
-  }
+.text-balance {
+  text-wrap: balance;
+}
 
-  .text-gradient {
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.5) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
+.text-gradient {
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.5) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 
-  .tech-tag {
-    display: inline-flex;
-    align-items: center;
-    padding: 4px 12px;
-    font-size: 11px;
-    font-weight: 500;
-    font-family: var(--font-mono);
-    letter-spacing: 0.03em;
-    border-radius: 9999px;
-    border: 1px solid;
-    transition: all 0.3s ease;
-    white-space: nowrap;
-  }
+.tech-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  font-size: 11px;
+  font-weight: 500;
+  font-family: var(--font-mono);
+  letter-spacing: 0.03em;
+  border-radius: 9999px;
+  border: 1px solid;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
 
-  :root .tech-tag {
-    border-color: rgba(0, 0, 0, 0.15);
-    color: rgba(0, 0, 0, 0.6);
-    background: rgba(0, 0, 0, 0.03);
-  }
+:root .tech-tag {
+  border-color: rgba(0, 0, 0, 0.15);
+  color: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.03);
+}
 
-  :root .tech-tag:hover {
-    border-color: rgba(0, 0, 0, 0.3);
-    color: rgba(0, 0, 0, 0.9);
-  }
+:root .tech-tag:hover {
+  border-color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.9);
+}
 
-  .dark .tech-tag {
-    border-color: rgba(255, 255, 255, 0.12);
-    color: rgba(255, 255, 255, 0.5);
-    background: rgba(255, 255, 255, 0.03);
-  }
+.dark .tech-tag {
+  border-color: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.03);
+}
 
-  .dark .tech-tag:hover {
-    border-color: rgba(255, 255, 255, 0.25);
-    color: rgba(255, 255, 255, 0.8);
-  }
+.dark .tech-tag:hover {
+  border-color: rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.8);
 }
