@@ -72,51 +72,53 @@ export default function Resume() {
         >
 
           {/* Column 1: Education */}
-          <div className="flex flex-col gap-12">
+          <div className="flex flex-col gap-6">
             <motion.h3 variants={itemVariants} className="text-[10px] md:text-xs font-bold uppercase tracking-widest text-neutral-500">
               Education
             </motion.h3>
 
-            <motion.div variants={itemVariants} className="flex flex-col gap-4 text-sm group cursor-default">
-              <div className="flex flex-col gap-0.5 transition-transform duration-300 group-hover:translate-x-1">
-                <h4 className="font-bold text-lg md:text-xl text-foreground tracking-tight transition-colors">Coventry University</h4>
-                <span className="font-mono text-xs text-neutral-500 transition-colors group-hover:text-neutral-400">2023-2026</span>
-              </div>
+            <div className="flex flex-col gap-12">
+              <motion.div variants={itemVariants} className="flex flex-col gap-4 text-sm group cursor-default">
+                <div className="flex flex-col gap-0.5 transition-transform duration-300 group-hover:translate-x-1">
+                  <h4 className="font-bold text-lg md:text-xl text-foreground tracking-tight transition-colors">Coventry University</h4>
+                  <span className="font-mono text-xs text-neutral-500 transition-colors group-hover:text-neutral-400">2023-2026</span>
+                </div>
 
-              <div className="flex flex-col gap-1 text-sm text-neutral-400 transition-colors group-hover:text-neutral-300 border-l-2 border-neutral-200 dark:border-neutral-800 pl-4 py-1">
-                <p className="font-medium text-foreground transition-colors">Bachelor of Science (Honors)</p>
-                <p>Computer Science</p>
-              </div>
+                <div className="flex flex-col gap-1 text-sm text-neutral-400 transition-colors group-hover:text-neutral-300 border-l-2 border-neutral-200 dark:border-neutral-800 pl-4 py-1">
+                  <p className="font-medium text-foreground transition-colors">Bachelor of Science (Honors)</p>
+                  <p>Computer Science</p>
+                </div>
 
-              <div className="font-medium text-[13px] uppercase tracking-wider text-neutral-500 mt-1 transition-colors group-hover:text-foreground pt-2">
-                First Class Honours
-              </div>
-            </motion.div>
+                <div className="font-medium text-[13px] uppercase tracking-wider text-neutral-500 mt-1 transition-colors group-hover:text-foreground pt-2">
+                  First Class Honours
+                </div>
+              </motion.div>
 
-            <motion.div variants={itemVariants} className="flex flex-col gap-4 text-sm group cursor-default">
-              <div className="flex flex-col gap-0.5 transition-transform duration-300 group-hover:translate-x-1">
-                <h4 className="font-bold text-lg md:text-xl text-foreground tracking-tight transition-colors leading-tight">Tunku Abdul Rahman University of Management and Technology (TARUMT)</h4>
-                <span className="font-mono text-xs text-neutral-500 mt-1 transition-colors group-hover:text-neutral-400">2020-2023</span>
-              </div>
+              <motion.div variants={itemVariants} className="flex flex-col gap-4 text-sm group cursor-default">
+                <div className="flex flex-col gap-0.5 transition-transform duration-300 group-hover:translate-x-1">
+                  <h4 className="font-bold text-lg md:text-xl text-foreground tracking-tight transition-colors leading-tight">Tunku Abdul Rahman University of Management and Technology (TARUMT)</h4>
+                  <span className="font-mono text-xs text-neutral-500 mt-1 transition-colors group-hover:text-neutral-400">2020-2023</span>
+                </div>
 
-              <div className="flex flex-col gap-1 text-sm text-neutral-400 transition-colors group-hover:text-neutral-300 border-l-2 border-neutral-200 dark:border-neutral-800 pl-4 py-1">
-                <p className="font-medium text-foreground transition-colors">Diploma</p>
-                <p>Mechatronics Engineering</p>
-              </div>
+                <div className="flex flex-col gap-1 text-sm text-neutral-400 transition-colors group-hover:text-neutral-300 border-l-2 border-neutral-200 dark:border-neutral-800 pl-4 py-1">
+                  <p className="font-medium text-foreground transition-colors">Diploma</p>
+                  <p>Mechatronics Engineering</p>
+                </div>
 
-              <div className="font-medium text-[13px] uppercase tracking-wider text-neutral-500 mt-1 transition-colors group-hover:text-foreground pt-2">
-                CGPA: 3.4/4.0
-              </div>
-            </motion.div>
+                <div className="font-medium text-[13px] uppercase tracking-wider text-neutral-500 mt-1 transition-colors group-hover:text-foreground pt-2">
+                  CGPA: 3.4/4.0
+                </div>
+              </motion.div>
+            </div>
           </div>
 
           {/* Column 2: Experience */}
-          <div className="flex flex-col gap-12">
+          <div className="flex flex-col gap-6">
             <motion.h3 variants={itemVariants} className="text-[10px] md:text-xs font-bold uppercase tracking-widest text-neutral-500">
               Experience
             </motion.h3>
 
-            <div className="flex flex-col gap-10">
+            <div className="flex flex-col gap-12">
               {[
                 { title: "Product Engineer Intern", company: "Keysight Technologies", date: "Dec 2025 - Apr 2026" },
                 { title: "Industrial Engineer Intern", company: "Analog Devices", date: "Feb 2023 - Jun 2023" },
@@ -142,6 +144,7 @@ export default function Resume() {
 
           {/* Column 3: Skills & Tools */}
           <div className="flex flex-col gap-12">
+            
             <div className="flex flex-col gap-6">
               <motion.h3 variants={itemVariants} className="text-[10px] md:text-xs font-bold uppercase tracking-widest text-neutral-500">
                 Skills
@@ -160,30 +163,31 @@ export default function Resume() {
               </motion.ul>
             </div>
 
-            <div className="flex flex-col gap-6 pt-4 border-t dark:border-neutral-900 border-neutral-200">
-              <motion.h3 variants={itemVariants} className="text-[10px] md:text-xs font-bold uppercase tracking-widest text-neutral-500">
-                Tools
-              </motion.h3>
-              <motion.ul variants={itemVariants} className="flex flex-col gap-3 text-sm">
-                {[
-                  "Figma", "Microsoft Office Suite",
-                  "CSS, HTML, Javascript/Typescript, Python", "PyCharm, CLion, VS Code, Antigravity", "Microsoft Power Platform (Power Apps, Power Automate)"
-                ].map((tool, i) => (
-                  <li key={i} className="text-neutral-400 font-medium hover:text-foreground transition-all duration-300 hover:translate-x-1 cursor-default leading-relaxed text-balance">
-                    {tool}
-                  </li>
-                ))}
-              </motion.ul>
-            </div>
+            <motion.div variants={itemVariants} className="flex flex-col gap-6 pt-6 border-t dark:border-neutral-900 border-neutral-200">
+               <h3 className="text-[10px] md:text-xs font-bold uppercase tracking-widest text-neutral-500">
+                 Tools
+               </h3>
+               <ul className="flex flex-col gap-3 text-sm">
+                 {[
+                   "Figma", "Microsoft Office Suite",
+                   "CSS, HTML, Javascript/Typescript, Python", "PyCharm, CLion, VS Code, Antigravity", "Microsoft Power Platform (Power Apps, Power Automate)"
+                 ].map((tool, i) => (
+                   <li key={i} className="text-neutral-400 font-medium hover:text-foreground transition-all duration-300 hover:translate-x-1 cursor-default leading-relaxed text-balance">
+                     {tool}
+                   </li>
+                 ))}
+               </ul>
+            </motion.div>
+
           </div>
 
           {/* Column 4: Awards */}
-          <div className="flex flex-col gap-12">
+          <div className="flex flex-col gap-6">
             <motion.h3 variants={itemVariants} className="text-[10px] md:text-xs font-bold uppercase tracking-widest text-neutral-500">
               Awards
             </motion.h3>
 
-            <div className="flex flex-col gap-10">
+            <div className="flex flex-col gap-12">
               <motion.div variants={itemVariants} className="flex flex-col gap-3 group cursor-default">
                 <div className="flex flex-col gap-0.5 transition-transform duration-300 group-hover:translate-x-1">
                   <h4 className="font-bold text-lg md:text-xl text-foreground tracking-tight transition-colors">

@@ -48,9 +48,17 @@ function Band({ maxSpeed = 50, minSpeed = 0, isMobile = false, theme = 'dark' })
   const vec = new THREE.Vector3(), ang = new THREE.Vector3(), rot = new THREE.Vector3(), dir = new THREE.Vector3();
   const segmentProps = { type: 'dynamic', canSleep: true, colliders: false, angularDamping: 4, linearDamping: 4 };
 
-  // Use absolute paths pointing to the public directory for Next.js compatibility
-  const { nodes, materials } = useGLTF('/assets/lanyard/card.glb');
-  const texture = useTexture('/assets/lanyard/lanyard.png');
+  // Add base path for GitHub Pages deployment
+  const assetPath = process.env.NODE_ENV === 'production' 
+    ? '/portfolio/assets/lanyard/card.glb' 
+    : '/assets/lanyard/card.glb';
+  
+  const texturePath = process.env.NODE_ENV === 'production'
+    ? '/portfolio/assets/lanyard/lanyard.png'
+    : '/assets/lanyard/lanyard.png';
+
+  const { nodes, materials } = useGLTF(assetPath);
+  const texture = useTexture(texturePath);
 
   const [curve] = useState(() => new THREE.CatmullRomCurve3([new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3()]));
   const [dragged, drag] = useState(false);
