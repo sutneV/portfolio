@@ -31,14 +31,14 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative w-full min-h-[100dvh] flex flex-col justify-end md:justify-center overflow-hidden bg-background pb-16 md:pb-0">
+    <section className="relative w-full min-h-[100dvh] flex flex-col md:justify-center overflow-x-hidden overflow-y-visible bg-background pb-16 md:pb-0">
       {/* 3D Lanyard Background/Centerpiece */}
-      <div className="absolute inset-x-0 top-0 bottom-0 z-30 pointer-events-none translate-y-[-32%] md:translate-y-0 md:translate-x-1/3 lg:translate-x-1/3 opacity-100 dark:mix-blend-difference">
+      <div className="absolute inset-x-0 top-0 h-[100vh] md:bottom-0 md:h-auto z-30 pointer-events-none translate-y-[-25%] md:translate-y-0 md:translate-x-1/3 lg:translate-x-1/3 opacity-100 dark:mix-blend-difference">
         {mounted && <Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} theme={resolvedTheme} />}
       </div>
 
       {/* Text block */}
-      <div className="z-10 px-6 md:px-16 w-full md:w-2/3 pointer-events-none relative pb-6 md:pb-0">
+      <div className="z-10 px-6 md:px-16 w-full md:w-2/3 pointer-events-none relative pt-[55vh] md:pt-0">
         <motion.div
           variants={containerVariants}
           initial="hidden"
