@@ -37,7 +37,7 @@ export default function ProjectCarousel({ images, title }: ProjectCarouselProps)
             }`}
           >
             <Image
-              src={img}
+              src={process.env.NODE_ENV === 'production' ? `/portfolio${img}` : img}
               alt={`${title} - image ${idx + 1}`}
               width={1920}
               height={1080}

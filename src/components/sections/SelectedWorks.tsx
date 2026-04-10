@@ -117,7 +117,7 @@ export default function SelectedWorks() {
                   {/* Mobile thumbnail preview */}
                   <div className="mt-6 md:hidden overflow-hidden rounded-lg">
                     <Image
-                      src={project.thumbnail}
+                      src={process.env.NODE_ENV === 'production' ? `/portfolio${project.thumbnail}` : project.thumbnail}
                       alt={project.title}
                       width={800}
                       height={450}
@@ -147,7 +147,7 @@ export default function SelectedWorks() {
           >
             <div className="w-[320px] h-[200px] rounded-xl overflow-hidden shadow-2xl ring-1 dark:ring-white/10 ring-black/10">
               <Image
-                src={projects[hoveredIdx].thumbnail}
+                src={process.env.NODE_ENV === 'production' ? `/portfolio${projects[hoveredIdx].thumbnail}` : projects[hoveredIdx].thumbnail}
                 alt={projects[hoveredIdx].title}
                 width={640}
                 height={400}
