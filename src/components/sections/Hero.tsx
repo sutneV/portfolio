@@ -31,9 +31,9 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative w-full min-h-[100dvh] flex flex-col justify-end md:justify-center overflow-hidden bg-background pb-24 md:pb-0">
+    <section className="relative w-full min-h-[100dvh] flex flex-col justify-end md:justify-center overflow-hidden bg-background pb-12 md:pb-0">
       {/* 3D Lanyard Background/Centerpiece */}
-      <div className="absolute inset-0 z-0 md:z-30 pointer-events-none translate-y-[-15%] md:translate-y-0 md:translate-x-1/3 lg:translate-x-1/3 opacity-40 md:opacity-100 dark:mix-blend-difference">
+      <div className="absolute inset-0 z-30 pointer-events-none translate-y-[-28%] md:translate-y-0 md:translate-x-1/3 lg:translate-x-1/3 opacity-100 dark:mix-blend-difference">
         {mounted && <Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} theme={resolvedTheme} />}
       </div>
 
