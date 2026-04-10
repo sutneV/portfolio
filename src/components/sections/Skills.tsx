@@ -126,13 +126,13 @@ export default function Skills() {
                         {skill.progress}%
                       </span>
                     </div>
-                    <div className="w-full h-[1px] md:h-[2px] bg-neutral-200 dark:bg-neutral-800 relative overflow-hidden">
+                    <div className="w-full h-[2px] bg-neutral-200 dark:bg-neutral-800 relative overflow-hidden rounded-full mt-2">
                       <motion.div
                         initial={{ width: 0 }}
                         whileInView={{ width: `${skill.progress}%` }}
-                        viewport={{ once: true, margin: "-50px" }}
-                        transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }} // smooth ease out curve
-                        className="absolute top-0 left-0 h-full bg-foreground"
+                        viewport={{ once: true, margin: "-20px" }}
+                        transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }} 
+                        className="absolute top-0 left-0 h-full bg-foreground rounded-full"
                       />
                     </div>
                   </div>
