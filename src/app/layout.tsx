@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: 'Wei Giap | Personal Portfolio',
   description: 'Personal Portfolio',
   icons: {
-    icon: '/favicon.ico',
+    icon: process.env.NODE_ENV === 'production' ? '/portfolio/favicon.ico' : '/favicon.ico',
   },
 };
 
