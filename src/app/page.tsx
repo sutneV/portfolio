@@ -2,6 +2,7 @@ import Navigation from '@/components/Navigation';
 import Hero from '@/components/sections/Hero';
 import SelectedWorks from '@/components/sections/SelectedWorks';
 import Skills from '@/components/sections/Skills';
+import Resume from '@/components/sections/Resume';
 import Philosophy from '@/components/sections/Philosophy';
 import Footer from '@/components/sections/Footer';
 
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <SelectedWorks />
       <Skills />
+      <Resume />
       <Philosophy />
       <Footer />
     </main>
