@@ -31,19 +31,19 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative w-full min-h-[100dvh] flex flex-col justify-end md:justify-center overflow-hidden bg-background pb-12 md:pb-0">
+    <section className="relative w-full min-h-[100dvh] flex flex-col justify-end md:justify-center overflow-hidden bg-background pb-20 md:pb-0">
       {/* 3D Lanyard Background/Centerpiece */}
-      <div className="absolute inset-0 z-30 pointer-events-none translate-y-[-28%] md:translate-y-0 md:translate-x-1/3 lg:translate-x-1/3 opacity-100 dark:mix-blend-difference">
+      <div className="absolute inset-0 z-30 pointer-events-none translate-y-[-20%] md:translate-y-0 md:translate-x-1/3 lg:translate-x-1/3 opacity-100 dark:mix-blend-difference">
         {mounted && <Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} theme={resolvedTheme} />}
       </div>
 
-      {/* Text block (rendered under the Lanyard now) */}
+      {/* Text block */}
       <div className="z-10 px-6 md:px-16 w-full md:w-2/3 pointer-events-none">
         <motion.div
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="flex flex-col gap-6 md:gap-8 text-foreground"
+          className="flex flex-col gap-5 md:gap-8 text-foreground"
         >
           <motion.h1 variants={itemVariants} className="text-3xl md:text-4xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100 font-sans">
             Hi, I'm Wei Giap - 林伟业 /línwěiyè/
@@ -68,7 +68,7 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 1 }}
-        className="absolute bottom-8 md:bottom-12 left-6 md:left-16 z-20 dark:mix-blend-difference"
+        className="absolute bottom-6 md:bottom-12 left-6 md:left-16 z-20 dark:mix-blend-difference"
       >
         <p className="text-[10px] md:text-xs font-mono uppercase tracking-widest text-neutral-500 dark:text-neutral-400">
           Scroll to explore ↓
